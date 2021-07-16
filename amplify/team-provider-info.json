@@ -1,0 +1,21 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplifyefb14bcc17d84-staging-183637-authRole",
+      "UnauthRoleArn": "arn:aws:iam::403577590697:role/amplify-amplifyefb14bcc17d84-staging-183637-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::403577590697:role/amplify-amplifyefb14bcc17d84-staging-183637-authRole",
+      "Region": "eu-west-2",
+      "DeploymentBucketName": "amplify-amplifyefb14bcc17d84-staging-183637-deployment",
+      "UnauthRoleName": "amplify-amplifyefb14bcc17d84-staging-183637-unauthRole",
+      "StackName": "amplify-amplifyefb14bcc17d84-staging-183637",
+      "StackId": "arn:aws:cloudformation:eu-west-2:403577590697:stack/amplify-amplifyefb14bcc17d84-staging-183637/4fc2f110-b99a-11eb-a35c-0a3d7df3b734",
+      "AmplifyAppId": "dpq7ea1p0e00f",
+      "AuthTriggerTemplateURL": ""
+    },
+    "categories": {
+      "auth": {
+        "rrphotographyweb": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplifyefb14bcc17d84-staging-183637-authRole",
+      "UnauthRoleArn": "arn:aws:iam::403577590697:role/amplify-amplifyefb14bcc17d84-staging-183637-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::403577590697:role/amplify-amplifyefb14bcc17d84-staging-183637-authRole",
+      "Region": "eu-west-2",
+      "DeploymentBucketName": "amplify-amplifyefb14bcc17d84-staging-183637-deployment",
+      "UnauthRoleName": "amplify-amplifyefb14bcc17d84-staging-183637-unauthRole",
+      "StackName": "amplify-amplifyefb14bcc17d84-staging-183637",
+      "StackId": "arn:aws:cloudformation:eu-west-2:403577590697:stack/amplify-amplifyefb14bcc17d84-staging-183637/4fc2f110-b99a-11eb-a35c-0a3d7df3b734",
+      "AmplifyAppId": "dpq7ea1p0e00f",
+      "AuthTriggerTemplateURL": ""
+    }
+  },
+  "auth": {
+    "rrphotographyweb": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "output": {
+        "UserPoolId": "eu-west-2_6uRLQYhFL",
+        "AppClientIDWeb": "12bkvqngonvmqfhplhcbs09g56",
+        "AppClientID": "52ps4s40pc0pcdn95lark2hjel",
+        "IdentityPoolId": "eu-west-2:e2f25cf9-a4fa-4b6a-8807-df5ab125f9f4",
+        "UserPoolArn": "arn:aws:cognito-idp:eu-west-2:403577590697:userpool/eu-west-2_6uRLQYhFL",
+        "IdentityPoolName": "testAuthIdentityPool__staging",
+        "UserPoolName": "rrphotographyweb"
+      },
+      "lastPushTimeStamp": "2021-06-14T10:48:02.273Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyefb14bcc17d84-staging-183637-deployment/amplify-cfn-templates/auth/rrphotographyweb-cloudformation-template.yml",
+        "logicalId": "authrrphotographyweb"
+      }
+    }
+  },
+  "api": {
+    "rrphotographyweb": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+            "userPoolConfig": {
+              "userPoolId": "authrrphotographyweb"
+            }
+          },
+          "additionalAuthenticationProviders": [
+            {
+              "authenticationType": "AWS_IAM"
+            }
+          ]
+        },
+        "GraphQLAPIIdOutput": "twpp5m2xgvg4hjttni6i7jbrp4",
+        "GraphQLAPIEndpointOutput": "https://whshnyif6bew7onx66jfipwgw4.appsync-api.eu-west-2.amazonaws.com/graphql"
+      },
+      "lastPushTimeStamp": "2021-06-14T10:48:02.278Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyefb14bcc17d84-staging-183637-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apirrphotographyweb"
+      },
+      "lastPushDirHash": "d2CwfWbV5g/6oDQNFGlcFwFno70="
+    }
+  }
+}

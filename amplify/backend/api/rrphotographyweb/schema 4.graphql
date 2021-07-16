@@ -1,0 +1,23 @@
+type WLimages @model @auth(rules: [{allow: groups, groups: ["admin"], operations: [read, create, update, delete]}]) {
+  id: ID!
+  imageName: String
+  cName: String
+}
+
+type Cimages @model @auth(rules: [{allow: groups, groups: ["admin"], operations: [read, create, update, delete]}]) {
+  id: ID!
+  imageNam: String
+  cName: String
+}
+
+type LSimages @model @auth(rules: [{allow: groups, groups: ["admin"], operations: [read, create, update, delete]}]) {
+  id: ID!
+  imageName: String
+  cName: String
+}
+
+type BWimages @model @auth(rules: [{allow: groups, groups: ["admin"], operations: [read, create, update, delete]}]) {
+  id: ID!
+  imageName: String
+  cName: String
+}

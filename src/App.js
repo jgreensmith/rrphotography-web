@@ -3,6 +3,9 @@ import './App.scss';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
+import Amplify, { API, graphqlOperation } from 'aws-amplify';
+import awsconfig from './aws-exports';
+
 
 import Navbar from './components/navbar';
 import About from './routes/about';
@@ -14,6 +17,8 @@ import Cyanotype from './routes/gallery/cyanotype';
 import BlackWhite from './routes/gallery/black-white';
 import Gallery from './routes/gallery/gallery';
 import Contact from './routes/contact/contact';
+
+Amplify.configure(awsconfig);
 
 library.add(fab);
 
